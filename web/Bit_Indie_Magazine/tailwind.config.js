@@ -4,7 +4,9 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                "honk": ['"Honk",  system-ui' , {fontVariationSettings: '"MORF" 45, "SHLN" 0' }]
+                "honk": ['"Honk",  system-ui' , {fontVariationSettings: '"MORF" 45, "SHLN" 0' }],
+                "kode": ['"Kode Mono",  monospace'],
+                "lexend": ['"Lexend", sans-serif'],
             },
         },
     },
