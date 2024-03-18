@@ -2,7 +2,7 @@ import "./styles/App.css"
 
 function App() {
   return (
-    <div>
+    <div className=" bg-slate-700">
       <header className="flex flex-row items-stretch px-3 py-2 bg-yellow-400">
         <div className="basis-full">
           <img src="" />
@@ -53,15 +53,15 @@ function App() {
           <p id="main-panel-description" className="w-[75%] mx-auto font-lexend font-extralight text-xs text-balance">Some beautiful description about this edition...</p>
         </section>
 
-        <div className=" flex flex-col gap-y-5">
-          <section id="previous-editions-panel" className="  mx-1 px-2 py-1 bg-indigo-950 text-slate-100 rounded-sm shadow-lg">
-            <h2 className=" font-lexend">Previous Editions</h2>
+        <div className=" flex flex-col px-1 gap-y-5">
+          <section id="previous-editions-panel" className="  mx-1 px-2 py-1 bg-indigo-950 text-slate-100 border-2 border-slate-100 rounded-sm shadow-lg">
+            <h2 className=" font-lexend text-2xl">Previous Editions</h2>
             <hr />
 
             <div className="relative">
-              <div className="absolute pointer-events-none right-0 top-0 left-0 bottom-0  bg-gradient-to-r from-transparent via-transparent via-[86%] to-indigo-950 to-[99%]"></div>
+              <div className="absolute pointer-events-none right-0 top-0 left-0 bottom-0  bg-gradient-to-r from-transparent via-transparent via-[90%] to-indigo-950 to-[100%] opacity-90"></div>
               <div className="overflow-x-scroll">
-                <div id="previous-editions-showcase" className=" flex flex-row justify-between w-[150%] py-2  pr-5 pl-2 ">
+                <div id="previous-editions-showcase" className=" flex flex-row justify-between w-[160%] py-2  pr-5 pl-2 ">
                   <div id="edition-index-1" className="w-16 h-24 shrink-0 bg-orange-400 rounded-sm">
                     <img src="" />
                   </div>
@@ -78,11 +78,11 @@ function App() {
                     <img src="" />
                   </div>
 
-                  <div className="flex flex-col mr-7">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6  basis-full ">
+                  <a href="" className="self-center" >
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 self-center mr-3">
                       <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607ZM10.5 7.5v6m3-3h-6" />
                     </svg>
-                  </div>
+                  </a>
 
                 </div>
               </div>
@@ -94,112 +94,131 @@ function App() {
             </div>
           </section>
 
-          <section id="community-highlights-panel" className=" mx-1 px-2 py-2 bg-orange-500 text-slate-100 rounded-sm shadow-lg">
-            <h2 className="text-end font-lexend " >Community Drops</h2>
+          <section id="community-highlights-panel" className=" mx-1 px-2 py-2 bg-orange-500 text-slate-100 border-2 border-slate-100 rounded-sm shadow-lg">
+            <h2 className="text-end font-lexend text-2xl " >Community Drops</h2>
             <hr />
             <div className="relative">
 
-              <div className="absolute pointer-events-none right-0 top-0 left-0 bottom-0  bg-gradient-to-r from-transparent via-transparent via-[86%] to-orange-500 to-[99%]"></div>
+              <div className="absolute pointer-events-none right-0 top-0 left-0 bottom-0  bg-gradient-to-r from-transparent via-transparent via-[90%] to-orange-500 to-[100%] opacity-90"></div>
 
               <div id="community-comments" className="overflow-x-scroll px-2 mt-2">
-                <div className="flex flex-row gap-x-7 w-fit">
-                  <article id="comment-index-1" className="h-32 w-56 bg-purple-900 rounded-sm">
-                    <div className="comment-header flex flex-row ">
+                <div className="flex flex-row gap-x-7 w-[312%]">
+                  <article id="comment-index-1" className="h-32 w-56 bg-purple-950 rounded-sm">
+                    <div className="comment-header flex flex-row px-2 py-1">
                       <img src="" />
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
                       </svg>
                       <h3 className="user-nickname inline-block align-super ">user</h3>
                     </div>
-                    <div className=" text ">
+                    <div className=" px-3 py-1 text-balance ">
                       <p>comment 1</p>
                     </div>
                   </article>
 
-                  <article id="comment-index-2" className="h-32 w-56 bg-purple-900 rounded-sm">
-                    <div className="comment-header flex flex-row ">
+                  <article id="comment-index-2" className="h-32 w-56 bg-purple-950 rounded-sm">
+                    <div className="comment-header flex flex-row  px-2 py-1">
                       <img src="" />
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
                       </svg>
                       <h3 className="user-nickname inline-block align-super">user</h3>
                     </div>
-                    <div className=" text ">
+                    <div className=" px-3 py-1 text-balance ">
                       <p>comment 2</p>
                     </div>
                   </article>
 
-                  <article id="comment-index-3" className="h-32 w-56 bg-purple-900 rounded-sm">
-                    <div className="comment-header flex flex-row ">
+                  <article id="comment-index-3" className="h-32 w-56 bg-purple-950 rounded-sm">
+                    <div className="comment-header flex flex-row  px-2 py-1">
                       <img src="" />
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
                       </svg>
                       <h3 className="user-nickname inline-block align-super ">user</h3>
                     </div>
-                    <div className=" text ">
+                    <div className=" px-3 py-1 text-balance ">
                       <p>comment 3</p>
                     </div>
                   </article>
 
-                  <article id="comment-index-4" className="h-32 w-56 bg-purple-900 rounded-sm">
-                    <div className="comment-header flex flex-row ">
+                  <article id="comment-index-4" className="h-32 w-56 bg-purple-950 rounded-sm">
+                    <div className="comment-header flex flex-row  px-2 py-1">
                       <img src="" />
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
                       </svg>
                       <h3 className="user-nickname inline-block align-super ">user</h3>
                     </div>
-                    <div className=" text ">
+                    <div className=" px-3 py-1 text-balance ">
                       <p>comment 4</p>
                     </div>
                   </article>
+
+                  <a href="" className="self-center" >
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 -rotate-45 fill-purple-950   ">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
+                    </svg>
+                  </a>
+
                 </div>
               </div>
             </div>
           </section>
 
-          <section id="donation-panel" className=" mx-1 px-2 py-2 bg-red-500 text-slate-100 rounded-sm shadow-lg">
-            <h2 className=" font-lexend">Support Our Work</h2>
+          <section id="donation-panel" className=" mx-1 px-2 py-2 bg-red-500 text-slate-100 border-2 border-slate-100 rounded-sm shadow-lg">
+            <h2 className=" font-lexend text-2xl">Support Our Work</h2>
             <img src="" />
             <hr />
 
             <div className=" h-48 overflow-scroll p-2">
               <div className="flex flex-col gap-y-2">
                 <p className="font-light text-xs ">Explanation about donations</p>
-                <div id="donation-category-1" className=" h-32 text-center bg-rose-800 rounded ">
-                  <a className=" pointer-events-none" href="">
+                <div id="donation-category-1" className="relative h-32 text-center bg-rose-800 rounded ">
+                  <div className="absolute pointer-events-none right-0 top-0 left-0 bottom-0  bg-gradient-to-b from-transparent via-transparent via-[70%] to-rose-700  to-[100%] rounded "></div>
+                  <div className=" pointer-events-none flex flex-col place-content-start  h-full " >
                     <img src="" />
-                    <h3></h3>
-                    <ul>
+                    <h3 className=" font-lexend" > CATEGORY 1</h3>
+                    <ul className="h-24">
                       <li>item 1</li>
                       <li>item 2</li>
                     </ul>
-                  </a>
+                    <div className="absolute bottom-2 w-full">
+                      <button className=" text-sm bg-purple-950 px-2 py-1 rounded-md">CLICK</button>
+                    </div>
+                  </div>
                 </div>
-                <div id="donation-category-2" className=" h-32 text-center bg-rose-800 rounded ">
-                  <a className=" pointer-events-none" href="">
+                <div id="donation-category-2" className="relative h-32 text-center bg-rose-800 rounded ">
+                  <div className="absolute pointer-events-none right-0 top-0 left-0 bottom-0  bg-gradient-to-b from-transparent via-transparent via-[70%] to-rose-700  to-[100%] rounded "></div>
+                  <div className=" pointer-events-none flex flex-col place-content-start  h-full " >
                     <img src="" />
-                    <h3></h3>
-                    <ul>
+                    <h3 className=" font-lexend" > CATEGORY 2</h3>
+                    <ul className="h-24">
                       <li>item 1</li>
                       <li>item 2</li>
                       <li>item 3</li>
                     </ul>
-                  </a>
+                    <div className="absolute bottom-2 w-full">
+                      <button className=" text-sm bg-purple-950 px-2 py-1 rounded-md">CLICK</button>
+                    </div>
+                  </div>
                 </div>
-                <div id="donation-category-3" className=" h-32 text-center bg-rose-800 rounded ">
-                  <a className=" pointer-events-none" href="">
+                <div id="donation-category-3" className="relative h-32 text-center bg-rose-800 rounded ">
+                  <div className="absolute pointer-events-none right-0 top-0 left-0 bottom-0  bg-gradient-to-b from-transparent via-transparent via-[70%] to-rose-700  to-[100%] rounded "></div>
+                  <div className=" pointer-events-none flex flex-col place-content-start  h-full overflow-hidden" >
                     <img src="" />
-                    <h3></h3>
-                    <ul>
+                    <h3 className=" font-lexend" > CATEGORY 3</h3>
+                    <ul className="h-24">
                       <li>item 1</li>
                       <li>item 2</li>
                       <li>item 3</li>
                       <li>item 4</li>
                       <li>item 5</li>
                     </ul>
-                  </a>
+                  </div>
+                  <div className="absolute bottom-2 w-full">
+                    <button className=" text-sm bg-purple-950 px-2 py-1 rounded-md">CLICK</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -219,16 +238,21 @@ function App() {
             <h2>Follow Our Channels</h2>
             <div>
               <a className=" pointer-events-none " href="">
-                <svg></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" stroke="currentColor" className="w-12 h-12" fill="none" viewBox="0 0 24 24">
+                  <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                </svg>
               </a>
               <a className=" pointer-events-none " href="">
-                <svg></svg>
+                <div>
+
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" className="w-12 h-12  fill-white" viewBox="0 0 24 24">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                  </svg>
+                </div>
               </a>
               <a className=" pointer-events-none " href="">
-                <svg></svg>
               </a>
               <a className=" pointer-events-none " href="">
-                <svg></svg>
               </a>
             </div>
           </section>
