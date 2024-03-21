@@ -1,4 +1,4 @@
-
+'use client'
 const PageHeader = () => {
     const openMobileNav = () => {
         const mobileNavPanel = document.querySelector("#mobile-navigation")
