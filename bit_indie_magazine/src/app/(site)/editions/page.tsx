@@ -1,5 +1,5 @@
+import "@/styles/App.module.css";
 import Panel from "@/components/index/main/panels/Panel";
-import "../App.module.css";
 
 const EditionsPage = () => {
     const editions = Array.from({ length: 7 }, (item, i) => {
@@ -30,7 +30,7 @@ const EditionsPage = () => {
                                     </p>
 
                                     <div className="absolute bottom-0 w-full my-2 text-center">
-                                        <button className=" font-semibold text-sm bg-orange-400 px-2 py-1 rounded-md">READ</button>
+                                        <a href="/reader" className=" font-semibold text-sm bg-orange-400 hover:bg-orange-300 active:bg-orange-700 px-3 py-2 rounded-md">READ</a>
                                     </div>
 
                                 </div>
