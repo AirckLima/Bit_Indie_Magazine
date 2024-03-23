@@ -16,7 +16,9 @@ export default function RootLayout({
       <body className=" min-h-screen bg-slate-800">
 
         <PageHeader />
-        { children }
+
+        {children}
+
         <PageFooter />
 
       </body>

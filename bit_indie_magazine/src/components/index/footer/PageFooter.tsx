@@ -6,9 +6,7 @@ const PageFooter = () => {
             <ul className="list-none">
                 <div className="grid grid-cols-3 text-center justify-center">
                     <li>
-                        <div>
-                            <p className="pointer-events-none text-uxs font-semibold text-slate-400">FOLLOW US</p>
-                        </div>
+                        <p className="pointer-events-none text-uxs font-semibold text-slate-400">FOLLOW US</p>
 
                         <Icons />
 
