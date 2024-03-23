@@ -1,7 +1,8 @@
+import Panel from "./Panel";
 
 const DonationPanel = () => {
     return (
-        <section id="donation-panel" className=" mx-1 px-2 py-2 bg-rose-800 text-slate-100 border-2 border-slate-300 rounded-md drop-shadow-lg">
+        <Panel panelId="donation-panel" backgroundImage="" backgroundColor="bg-rose-800">
             <div className=" mb-2 ">
                 <h2 className=" font-lexend text-2xl">Support Our Work</h2>
                 <img src="" />
@@ -14,7 +15,7 @@ const DonationPanel = () => {
                 <div className="flex flex-col gap-y-2">
 
                     <div id="donation-category-1" className="relative h-fit text-center bg- border-2 border-white rounded ">
-                        {/* <div className="absolute pointer-events-none right-0 top-0 left-0 bottom-0  bg-gradient-to-b from-transparent via-transparent via-[70%] to-rose-700  to-[100%] rounded "></div> */ }
+                        {/* <div className="absolute pointer-events-none right-0 top-0 left-0 bottom-0  bg-gradient-to-b from-transparent via-transparent via-[70%] to-rose-700  to-[100%] rounded "></div> */}
                         <div className=" pointer-events-none flex flex-col place-content-start h-full  " >
                             <img src="" />
                             <h3 className=" font-lexend" > CATEGORY 1</h3>
@@ -29,7 +30,7 @@ const DonationPanel = () => {
                     </div>
 
                     <div id="donation-category-2" className="relative h-fit text-center bg- border-2 border-white rounded ">
-                        {/* <div className="absolute pointer-events-none right-0 top-0 left-0 bottom-0  bg-gradient-to-b from-transparent via-transparent via-[70%] to-rose-700  to-[100%] rounded "></div> */ }
+                        {/* <div className="absolute pointer-events-none right-0 top-0 left-0 bottom-0  bg-gradient-to-b from-transparent via-transparent via-[70%] to-rose-700  to-[100%] rounded "></div> */}
                         <div className=" pointer-events-none flex flex-col place-content-start h-full  " >
                             <img src="" />
                             <h3 className=" font-lexend" > CATEGORY 2</h3>
@@ -45,7 +46,7 @@ const DonationPanel = () => {
                     </div>
 
                     <div id="donation-category-3" className="relative h-fit text-center bg- border-2 border-white rounded ">
-                        {/* <div className="absolute pointer-events-none right-0 top-0 left-0 bottom-0  bg-gradient-to-b from-transparent via-transparent via-[70%] to-rose-700  to-[100%] rounded "></div> */ }
+                        {/* <div className="absolute pointer-events-none right-0 top-0 left-0 bottom-0  bg-gradient-to-b from-transparent via-transparent via-[70%] to-rose-700  to-[100%] rounded "></div> */}
                         <div className=" pointer-events-none flex flex-col place-content-start h-full " >
                             <img src="" />
                             <h3 className=" font-lexend" > CATEGORY 3</h3>
@@ -64,7 +65,7 @@ const DonationPanel = () => {
 
                 </div>
             </div>
-        </section>
+        </Panel>
     );
 };
 

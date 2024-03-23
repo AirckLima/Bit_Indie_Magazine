@@ -1,6 +1,6 @@
 import NewEditionPanel from "./panels/NewEditionPanel";
 import PreviousEditionsPanel from "./panels/PreviousEditionsPanel";
-import CommunityPanel from "./panels/CommunityPanel";
+import CommunityPanel from "./panels/Community/CommunityPanel";
 import DonationPanel from "./panels/DonationPanel";
 import AboutPanel from "./panels/AboutPanel";
 
