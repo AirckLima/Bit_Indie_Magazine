@@ -1,6 +1,6 @@
 import "@/styles/App.module.css"
 
-const Reader = () => {
+const Reader = ({params}: {params: {magazineID:string, page:string}}) => {
     return (
         <div>
 
