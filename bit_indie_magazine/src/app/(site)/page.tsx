@@ -1,5 +1,5 @@
 import "@/styles/App.module.css";
-import MainContent from "@/components/index/main/MainContent";
+import MainContent from "@/components/site/main/MainContent";
 
 
 export default function Home() {

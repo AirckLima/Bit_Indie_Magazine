@@ -1,5 +1,5 @@
 import "@/styles/App.module.css";
-import Panel from "@/components/index/main/panels/Panel";
+import Panel from "@/components/site/main/panels/Panel";
 
 const EditionsPage = () => {
     const editions = Array.from({ length: 7 }, (item, i) => {

@@ -1,7 +1,7 @@
 import "@/styles/global.css";
 import type { Metadata } from "next";
-import PageHeader from "@/components/index/header/PageHeader";
-import PageFooter from "@/components/index/footer/PageFooter";
+import PageHeader from "@/components/site/header/PageHeader";
+import PageFooter from "@/components/site/footer/PageFooter";
 
 export const metadata: Metadata = {
   title: "Bit Indie Magazine",
