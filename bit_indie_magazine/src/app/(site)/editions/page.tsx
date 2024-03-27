@@ -38,7 +38,7 @@ const EditionsPage = () => {
                                     </p>
 
                                     <div className="absolute bottom-0 w-full my-2 text-center">
-                                        <a href="/reader" className=" font-semibold text-sm bg-orange-400 hover:bg-orange-300 active:bg-orange-700 px-3 py-2 rounded-md">READ</a>
+                                        <a href={ `/reader/${edition}` } className=" font-semibold text-sm bg-orange-400 hover:bg-orange-300 active:bg-orange-700 px-3 py-2 rounded-md">READ</a>
                                     </div>
 
                                 </div>

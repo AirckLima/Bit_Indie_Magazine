@@ -8,21 +8,21 @@ const PreviousEditionsPanel = () => {
 
             <div className="relative">
                 <div className="absolute pointer-events-none right-0 top-0 left-0 bottom-0  bg-gradient-to-r from-transparent via-transparent via-[95%] to-indigo-950 to-[100%] opacity-90"></div>
-                <div className="overflow-x-scroll">
+                <div className="overflow-x-scroll will-change-scroll snap-x">
                     <div id="previous-editions-showcase" className=" flex flex-row justify-between w-[160%] py-2  pr-5 pl-2 ">
-                        <div id="edition-index-1" className="w-16 h-24 shrink-0 bg-orange-400 rounded-sm">
+                        <div id="edition-index-1" className="w-16 h-24 shrink-0 bg-orange-400 rounded-sm snap-start scroll-mx-3">
                             <img src="" />
                         </div>
-                        <div id="edition-index-2" className="w-16 h-24 shrink-0 bg-orange-400 rounded-sm">
+                        <div id="edition-index-2" className="w-16 h-24 shrink-0 bg-orange-400 rounded-sm snap-start scroll-mx-3">
                             <img src="" />
                         </div>
-                        <div id="edition-index-3" className="w-16 h-24 shrink-0 bg-orange-400 rounded-sm">
+                        <div id="edition-index-3" className="w-16 h-24 shrink-0 bg-orange-400 rounded-sm snap-start scroll-mx-3">
                             <img src="" />
                         </div>
-                        <div id="edition-index-4" className="w-16 h-24 shrink-0 bg-orange-400 rounded-sm">
+                        <div id="edition-index-4" className="w-16 h-24 shrink-0 bg-orange-400 rounded-sm snap-start scroll-mx-3">
                             <img src="" />
                         </div>
-                        <div id="edition-index-5" className="w-16 h-24 shrink-0 bg-orange-400 rounded-sm">
+                        <div id="edition-index-5" className="w-16 h-24 shrink-0 bg-orange-400 rounded-sm snap-start scroll-mx-3">
                             <img src="" />
                         </div>
 
