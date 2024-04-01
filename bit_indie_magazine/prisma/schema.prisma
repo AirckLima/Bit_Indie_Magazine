@@ -14,7 +14,40 @@ datasource db {
 }
 
 model User {
-id      Int      @id @default(autoincrement())
-email   String   @unique
-name    String?
+  id    Int     @id @default(autoincrement())
+  email String  @unique
+  name  String?
 }
+
+// model Magazine {
+//   id            Int                 @id @default(autoincrement())
+//   title         String              @db.VarChar(140)
+//   releaseNumber Int                 @db.SmallInt
+//   releaseDate   DateTime            @db.Date
+//   Contribuitors Team
+// }
+
+// model Team{
+//   id Int @id @default(autoincrement())
+
+// }
+
+// model Member {
+//   id             Int                 @id @default(autoincrement())
+//   name           String              @db.VarChar(99)
+//   contribuitions Contibuition[]
+// }
+
+// model Contibuition {
+//   magazineID Int
+//   magazine   Magazine @relation(fields: [magazineID], references: [id])
+//   memberId   Int
+//   member     Member   @relation(fields: [memberId], references: [id])
+
+//   @@id([memberId, magazineID])
+// }
+
+// enum MemberRole {
+//   EDITOR
+//   DESIGNER
+// }
