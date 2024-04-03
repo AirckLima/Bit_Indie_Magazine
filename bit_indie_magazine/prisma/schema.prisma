@@ -19,35 +19,23 @@ model User {
   name  String?
 }
 
-// model Magazine {
-//   id            Int                 @id @default(autoincrement())
-//   title         String              @db.VarChar(140)
-//   releaseNumber Int                 @db.SmallInt
-//   releaseDate   DateTime            @db.Date
-//   Contribuitors Team
-// }
+model Magazine {
+  id            Int      @id @default(autoincrement())
+  title         String   @db.VarChar(140)
+  releaseNumber Int      @unique @db.SmallInt
+  releaseDate   DateTime @db.Date
+  team          Team?
+}
 
-// model Team{
-//   id Int @id @default(autoincrement())
+model Team {
+  id         Int      @id @default(autoincrement())
+  magazine   Magazine @relation(fields: [magazineId], references: [id])
+  magazineId Int      @unique
+  members    Member[]
+}
 
-// }
-
-// model Member {
-//   id             Int                 @id @default(autoincrement())
-//   name           String              @db.VarChar(99)
-//   contribuitions Contibuition[]
-// }
-
-// model Contibuition {
-//   magazineID Int
-//   magazine   Magazine @relation(fields: [magazineID], references: [id])
-//   memberId   Int
-//   member     Member   @relation(fields: [memberId], references: [id])
-
-//   @@id([memberId, magazineID])
-// }
-
-// enum MemberRole {
-//   EDITOR
-//   DESIGNER
-// }
+model Member {
+  id   Int    @id @default(autoincrement())
+  name String @db.VarChar(99)
+  team Team[]
+}
