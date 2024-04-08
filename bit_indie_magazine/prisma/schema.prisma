@@ -28,14 +28,29 @@ model Magazine {
 }
 
 model Team {
-  id         Int      @id @default(autoincrement())
-  magazine   Magazine @relation(fields: [magazineId], references: [id])
-  magazineId Int      @unique
-  members    Member[]
+  id         Int                   @id @default(autoincrement())
+  magazine   Magazine              @relation(fields: [magazineId], references: [id])
+  magazineId Int                   @unique
+  members    MemberContribuition[]
+}
+
+model MemberContribuition {
+  team       Team               @relation(fields: [teamId], references: [id])
+  teamId     Int
+  member     Member             @relation(fields: [memberId], references: [id])
+  memberId   Int
+  memberRole contribuitionRoles
+
+  @@id([teamId, memberId])
 }
 
 model Member {
-  id   Int    @id @default(autoincrement())
-  name String @db.VarChar(99)
-  team Team[]
+  id            Int                   @id @default(autoincrement())
+  name          String                @db.VarChar(99)
+  contribuition MemberContribuition[]
+}
+
+enum contribuitionRoles {
+  EDITOR
+  DESIGNER
 }

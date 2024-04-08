@@ -11,7 +11,7 @@ export default async function EditionDetails({ params }: { params: { id: string;
     if (!isNaN(Number(params.id))) {
         _edition = await Prisma.magazine.findUnique({
             where: { releaseNumber: Number(params.id) },
-            include: { team: { select: { members: true } } }
+            include: { team: { include: { members: true } } }
         });
 
         if (!_edition?.id) notFound();
@@ -19,7 +19,8 @@ export default async function EditionDetails({ params }: { params: { id: string;
 
     const edition = _edition;
 
-    const heros = edition?.team?.members;
+    const heros = await Prisma.member.findMany({ where: { id: { in: edition?.team?.members.map((m) => m.memberId) } } });
+
     let i = 0;
 
     return (
@@ -27,7 +28,7 @@ export default async function EditionDetails({ params }: { params: { id: string;
 
             <div className="flex flex-col bg-indigo-950 pb-4 mb-3 rounded-md">
                 <div className="bg-orange-400 py-2 rounded-t-md">
-                    <h2 className="relative left-7 font-lexend text-xl text-slate-100">Edition { edition?.releaseNumber }</h2>
+                    <h2 className="relative left-7 inline-block font-lexend text-xl text-slate-100">Edition { edition?.releaseNumber }</h2>
                 </div>
 
                 <div className="grid grid-cols-1 justify-items-center py-5 space-y-4">
@@ -47,11 +48,11 @@ export default async function EditionDetails({ params }: { params: { id: string;
 
             <div className="flex flex-col bg-indigo-950 mb-3 rounded-md">
                 <div className="bg-orange-400 py-2 rounded-t-md">
-                    <h2 className="relative left-7 font-lexend text-xl text-slate-100">Heros of this magazine</h2>
+                    <h2 className="relative left-7 inline-block font-lexend text-xl text-slate-100">Heros of this magazine</h2>
                 </div>
 
                 <div className="flex flex-row justify-center gap-7 list-none py-3">
-                    { heros?.map((hero) => {
+                    { heros?.map((hero: any) => {
                         let index = ++i;
                         return (
                             <li key={ index } >
