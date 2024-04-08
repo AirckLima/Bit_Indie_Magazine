@@ -1,3 +1,4 @@
+import "@/styles/App.module.css";
 
 const aboutPage = () => {
     return (
